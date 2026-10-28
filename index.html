@@ -1,0 +1,554 @@
+<!-- 
+=======================================================================
+NOTA PARA EDICIÓN:
+- Textos y Traducciones: Modifica los textos directamente dentro de las etiquetas <span class="lang-es"> (Español) y <span class="lang-de"> (Alemán).
+- Rutas de Archivos: Las imágenes apuntan a "assets/img/..." y la música a "assets/audio/...". Asegúrate de que los nombres de tus archivos coincidan.
+- Enlaces: Los links de Google Maps y WhatsApp están en las etiquetas <a> con el atributo "href".
+=======================================================================
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocio & Dennis | Wedding Invitation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="lang-es-active">
+
+<!-- ===================== -->
+  <!-- SELECTOR DE IDIOMA -->
+  <!-- ===================== -->
+  <div class="lang-switcher">
+    
+    <button id="btn-es" class="lang-btn active">
+      <img src="https://flagcdn.com/w40/es.png" alt="ES" class="flag-icon">
+    </button>
+    <button id="btn-de" class="lang-btn">
+      <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon">
+    </button>
+  </div>
+
+  <!-- ===================== -->
+  <!-- INTRO / SOBRE -->
+  <!-- ===================== -->
+  <div class="intro" id="intro">
+    <div class="intro-content card-floral">
+      <img src="assets/img/flores-top.png" alt="Flores" class="floral-decor top" onerror="this.style.display='none'">
+      
+      <p class="intro-tag">
+        <span class="lang-es">NOS CASAMOS</span>
+        <span class="lang-de">WIR HEIRATEN</span>
+      </p>
+      
+      <h1>Rocio & Dennis</h1>
+      
+      <div class="intro-divider"></div>
+      
+      <p class="intro-date">
+        <span class="lang-es">13 · Febrero · 2027</span>
+        <span class="lang-de">13 · Februar · 2027</span>
+      </p>
+      
+      <button class="btn-primary" id="openInvitation">
+        <span class="lang-es">Abrir invitación</span>
+        <span class="lang-de">Einladung öffnen</span>
+      </button>
+
+      <img src="assets/img/flores-bottom.png" alt="Flores" class="floral-decor bottom" onerror="this.style.display='none'">
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- MUSIC BUTTON & AUDIO -->
+  <!-- ===================== -->
+  <button class="music-button" id="musicButton">
+    <i class="fa-solid fa-music"></i>
+  </button>
+  <audio id="backgroundMusic" loop>
+    <source src="assets/audio/music.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- ===================== -->
+  <!-- HERO (PORTADA) -->
+  <!-- ===================== -->
+  <header class="hero">
+    <img class="hero-image" src="assets/img/portada.jpg" alt="Rocio & Dennis" />
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <p class="hero-subtitle">
+        <span class="lang-es">RESERVA LA FECHA</span>
+        <span class="lang-de">SAVE THE DATE</span>
+      </p>
+      
+      <h1>Rocio & Dennis</h1>
+      
+      <div class="hero-ornament"></div>
+      
+      <!-- CUENTA REGRESIVA -->
+      <div class="countdown">
+        <div class="count-item">
+          <span id="days">00</span>
+          <small class="lang-es">Días</small>
+          <small class="lang-de">Tage</small>
+        </div>
+        <div class="count-item">
+          <span id="hours">00</span>
+          <small class="lang-es">Horas</small>
+          <small class="lang-de">Std</small>
+        </div>
+        <div class="count-item">
+          <span id="minutes">00</span>
+          <small class="lang-es">Min</small>
+          <small class="lang-de">Min</small>
+        </div>
+        <div class="count-item">
+          <span id="seconds">00</span>
+          <small class="lang-es">Seg</small>
+          <small class="lang-de">Sek</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== -->
+  <!-- NUESTRA HISTORIA -->
+  <!-- ===================== -->
+  <section class="section reveal floral-bg">
+    <div class="container">
+      <div class="card story-card">
+        <i class="fa-solid fa-heart story-icon"></i>
+        <p class="story-text">
+          <span class="lang-es">"Después de 4 años de amor, distancia y reencuentros, entendimos que el hogar no es un lugar, sino una persona."</span>
+          <span class="lang-de">"Nach 4 Jahren voller Liebe, Distanz und Wiedersehen haben wir verstanden, dass Heimat kein Ort ist, sondern eine Person."</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- PADRES Y PADRINOS -->
+  <!-- ===================== -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">CON LA BENDICIÓN DE</span>
+          <span class="lang-de">MIT DEM SEGEN VON</span>
+        </p>
+        <h2>
+          <span class="lang-es">Nuestros Padres</span>
+          <span class="lang-de">Unseren Eltern</span>
+        </h2>
+      </div>
+
+      <div class="parents-grid">
+        <div class="parents-col">
+          <h3 class="lang-es">Padres de la novia</h3>
+          <h3 class="lang-de">Eltern der Braut</h3>
+          <p>Celestino Miranda<br>Nora Neira</p>
+        </div>
+        <div class="parents-col">
+          <h3 class="lang-es">Padres del novio</h3>
+          <h3 class="lang-de">Eltern des Bräutigams</h3>
+          <p>Manuel Mosgoll<br>Silke Mosgoll</p>
+        </div>
+      </div>
+
+      <div class="padrinos-section">
+        <h3>
+          <span class="lang-es">Y nuestros padrinos</span>
+          <span class="lang-de">Und unseren Trauzeugen</span>
+        </h3>
+        <p>Winfried Mosgoll<br>Gerda Mosgoll†</p>
+        <p style="font-size: 20px;">25.12.2023.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== -->
+  <!-- SEPARADOR FLORAL -->
+  <!-- ===================== -->
+  <div class="section-divider reveal">
+    <!-- Puedes usar una imagen alargada o reutilizar flores-bottom.png -->
+    <img src="assets/img/flores-mid.png" alt="Decoración" class="divider-img" onerror="this.style.display='none'">
+  </div>
+
+  <!-- ===================== -->
+  <!-- DETALLES (FECHA Y LUGAR) -->
+  <!-- ===================== -->
+  <section class="section reveal floral-bg-light">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">CUÁNDO Y DÓNDE</span>
+          <span class="lang-de">WANN UND WO</span>
+        </p>
+        <h2>
+          <span class="lang-es">Detalles del Evento</span>
+          <span class="lang-de">Veranstaltungsdetails</span>
+        </h2>
+      </div>
+
+      <div class="details-grid">
+        <!-- Fecha -->
+        <div class="detail-card">
+          <i class="fa-regular fa-calendar"></i>
+          <h3>
+            <span class="lang-es">Fecha</span>
+            <span class="lang-de">Datum</span>
+          </h3>
+          <p>
+            <span class="lang-es">Sábado, 13 de febrero de 2027</span>
+            <span class="lang-de">Samstag, 13. Februar 2027</span>
+          </p>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="detail-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>
+            <span class="lang-es">Ubicación</span>
+            <span class="lang-de">Ort</span>
+          </h3>
+          <p>Fraccionamiento San Antonio</p>
+          <p class="address">Calle San Antonio #25<br>Silao, Guanajuato</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a href="https://maps.app.goo.gl/rsY7V2Ckigji9vjZ7?g_st=ac" class="btn-primary" target="_blank">
+          <span class="lang-es">Ver en Google Maps</span>
+          <span class="lang-de">Auf Google Maps ansehen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- ITINERARIO -->
+  <!-- ===================== -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">NUESTRO DÍA</span>
+          <span class="lang-de">UNSER TAG</span>
+        </p>
+        <h2>
+          <span class="lang-es">Itinerario</span>
+          <span class="lang-de">Programm</span>
+        </h2>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+        
+        <!-- Ceremonia -->
+        <div class="timeline-item left">
+          <div class="timeline-icon"><i class="fa-solid fa-church"></i></div>
+          <div class="timeline-content card">
+            <small>
+              <span class="lang-es">6:00 pm</span>
+              <span class="lang-de">18:00 Uhr</span>
+            </small>
+            <h3>
+              <span class="lang-es">Ceremonia</span>
+              <span class="lang-de">Zeremonie</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Coctel -->
+        <div class="timeline-item right">
+          <div class="timeline-icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>
+          <div class="timeline-content card">
+            <small>
+              <span class="lang-es">7:00 pm</span>
+              <span class="lang-de">19:00 Uhr</span>
+            </small>
+            <h3>
+              <span class="lang-es">Coctel</span>
+              <span class="lang-de">Empfang</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Cena -->
+        <div class="timeline-item left">
+          <div class="timeline-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="timeline-content card">
+            <small>
+              <span class="lang-es">8:00 pm</span>
+              <span class="lang-de">20:00 Uhr</span>
+            </small>
+            <h3>
+              <span class="lang-es">Cena</span>
+              <span class="lang-de">Abendessen</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Baile -->
+        <div class="timeline-item right">
+          <div class="timeline-icon"><i class="fa-solid fa-heart"></i></div>
+          <div class="timeline-content card">
+            <small>
+              <span class="lang-es">9:00 pm</span>
+              <span class="lang-de">21:00 Uhr</span>
+            </small>
+            <h3>
+              <span class="lang-es">Primer Baile</span>
+              <span class="lang-de">Erster Tanz</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Pista -->
+        <div class="timeline-item left">
+          <div class="timeline-icon"><i class="fa-solid fa-music"></i></div>
+          <div class="timeline-content card">
+            <small>
+              <span class="lang-es">9:15 pm</span>
+              <span class="lang-de">21:15 Uhr</span>
+            </small>
+            <h3>
+              <span class="lang-es">¡A bailar!</span>
+              <span class="lang-de">Auf zum Tanzen!</span>
+            </h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ===================== -->
+  <!-- SEPARADOR FLORAL -->
+  <!-- ===================== -->
+  <div class="section-divider reveal">
+    <!-- Puedes usar una imagen alargada o reutilizar flores-bottom.png -->
+    <img src="assets/img/flores-mid.png" alt="Decoración" class="divider-img" onerror="this.style.display='none'">
+  </div>
+
+  <!-- ===================== -->
+  <!-- HOSPEDAJE -->
+  <!-- ===================== -->
+  <section class="section reveal floral-bg-light">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">RECOMENDACIONES</span>
+          <span class="lang-de">EMPFEHLUNGEN</span>
+        </p>
+        <h2>
+          <span class="lang-es">Hospedaje</span>
+          <span class="lang-de">Unterkunft</span>
+        </h2>
+      </div>
+
+      <div class="hotels-grid">
+        <div class="hotel-card card">
+          <i class="fa-solid fa-bed"></i>
+          <h3>Fiesta Inn Puerto Interior</h3>
+          <a href="https://maps.app.goo.gl/JMEWztkPkYRpoT8Y8" target="_blank" class="btn-outline">
+            <span class="lang-es">Ver ubicación</span>
+            <span class="lang-de">Standort ansehen</span>
+          </a>
+        </div>
+
+        <div class="hotel-card card">
+          <i class="fa-solid fa-bed"></i>
+          <h3>Fairfield Inn & Suites Guanajuato Silao</h3>
+          <a href="https://maps.app.goo.gl/6FBLfuG6h3EFznhj6" target="_blank" class="btn-outline">
+            <span class="lang-es">Ver ubicación</span>
+            <span class="lang-de">Standort ansehen</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- DRESS CODE -->
+  <!-- ===================== -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">ATUENDO</span>
+          <span class="lang-de">KLEIDERORDNUNG</span>
+        </p>
+        <h2>Dress Code</h2>
+      </div>
+
+      <div class="card dress-card">
+        <i class="fa-solid fa-user-tie dress-icon"></i>
+        <h3>
+          <span class="lang-es">Formal / Semi formal</span>
+          <span class="lang-de">Formell / Halbformell</span>
+        </h3>
+        <p>
+          <span class="lang-es">Se invita a llevar colores vivos. Blanco y colores claros se reservan exclusivamente para la novia.</span>
+          <span class="lang-de">Bunte Farben sind erwünscht. Weiß und helle Farben sind ausschließlich der Braut vorbehalten.</span>
+        </p>
+        
+        <div class="palette">
+          <span class="palette-color pink"></span>
+          <span class="palette-color blue"></span>
+          <span class="palette-color green"></span>
+          <span class="palette-color yellow"></span>
+          <span class="palette-color purple"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- MESA DE REGALOS -->
+  <!-- ===================== -->
+  <section class="section reveal floral-bg">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">NUESTRO FUTURO</span>
+          <span class="lang-de">UNSERE ZUKUNFT</span>
+        </p>
+        <h2>
+          <span class="lang-es">Mesa de Regalos</span>
+          <span class="lang-de">Geschenketisch</span>
+        </h2>
+      </div>
+
+      <div class="card gifts-card floral-card">
+        <!-- Decoración floral superior izquierda -->
+        <img src="assets/img/flores-top.png" alt="Flores" class="card-corner-decor" onerror="this.style.display='none'">
+        
+        <i class="fa-solid fa-envelope-open-text gift-icon"></i>
+        <p>
+          <span class="lang-es">
+            Un nuevo hogar, un nuevo país y una nueva aventura. Nuestro mejor regalo es compartir este día con ustedes. Si desean acompañarnos también en este nuevo comienzo, agradeceremos mucho una aportación en un sobre. Con ella nos ayudan a construir nuestros sueños juntos. Gracias por acompañarnos y ser parte de este momento tan especial.
+          </span>
+          <span class="lang-de">
+            Ein neues Zuhause, ein neues Land und ein neues Abenteuer. Das größte Geschenk ist es, diesen Tag mit euch zu verbringen. Wenn ihr uns bei diesem Neuanfang unterstützen möchtet, freuen wir uns sehr über einen Beitrag im Briefumschlag. Damit helft ihr uns, unsere gemeinsamen Träume zu verwirklichen. Danke, dass ihr Teil dieses besonderen Moments seid.
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- GALERÍA -->
+  <!-- ===================== -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">RECUERDOS</span>
+          <span class="lang-de">ERINNERUNGEN</span>
+        </p>
+        <h2>
+          <span class="lang-es">Galería</span>
+          <span class="lang-de">Galerie</span>
+        </h2>
+      </div>
+
+      <div class="gallery" id="galleryContainer">
+        <img src="assets/img/foto2.jpg" alt="Wedding 2" class="gallery-img">
+        <img src="assets/img/foto3.jpg" alt="Wedding 3" class="gallery-img">
+        <img src="assets/img/foto4.jpg" alt="Wedding 4" class="gallery-img">
+        <img src="assets/img/foto5.jpg" alt="Wedding 5" class="gallery-img">
+        <img src="assets/img/foto6.jpg" alt="Wedding 6" class="gallery-img">
+        <img src="assets/img/foto7.jpg" alt="Wedding 7" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- RSVP -->
+  <!-- ===================== -->
+  <section class="section reveal floral-bg-light">
+    <div class="container rsvp-container">
+      <div class="section-title">
+        <p>
+          <span class="lang-es">ESPERAMOS CONTAR CON TU PRESENCIA</span>
+          <span class="lang-de">WIR FREUEN UNS AUF DEIN KOMMEN</span>
+        </p>
+        <h2>RSVP</h2>
+      </div>
+
+      <div class="card rsvp-card floral-card">
+        <!-- Decoración floral superior izquierda -->
+        <img src="assets/img/flores-top.png" alt="Flores" class="card-corner-decor" onerror="this.style.display='none'">
+        
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+        <h3>
+          <span class="lang-es">Confirmar Asistencia</span>
+          <span class="lang-de">Zusage Bestätigen</span>
+        </h3>
+        <p class="rsvp-limit">
+          <span class="lang-es">Fecha límite para confirmar:<br><strong>7 de febrero del 2027</strong></span>
+          <span class="lang-de">Frist für die Zusage:<br><strong>7. Februar 2027</strong></span>
+        </p>
+        
+        <!-- El id="whatsappLink" permite que el JS actualice el mensaje al cambiar de idioma -->
+        <a id="whatsappLink" href="https://wa.me/525649660085?text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Roc%C3%ADo%20y%20Dennis%20%E2%9C%A8" target="_blank" class="btn-primary whatsapp-btn">
+          <span class="lang-es">Confirmar por WhatsApp</span>
+          <span class="lang-de">Per WhatsApp bestätigen</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- ===================== -->
+  <!-- FOOTER MARCA -->
+  <!-- ===================== -->
+  <footer class="brand-section">
+    <div class="brand-divider"></div>
+    <img src="assets/img/logo.png" alt="Logo Atelier Digital" class="brand-logo">
+    <p class="brand-created">
+      <span class="lang-es">Invitación creada por</span>
+      <span class="lang-de">Einladung erstellt von</span>
+    </p>
+    <h3 class="brand-name">ATELIER DIGITAL</h3>
+    <p class="brand-text">
+      <span class="lang-es">¿Te gustó esta invitación? Podemos personalizar una con tus fotos, colores, música, ubicación y confirmación por WhatsApp.</span>
+      <span class="lang-de">Hat dir diese Einladung gefallen? Wir können eine personalisierte Einladung mit deinen Fotos, Farben, Musik, Ort und WhatsApp-Bestätigung erstellen.</span>
+    </p>
+    <div class="brand-social">
+      <a href="https://www.instagram.com/atelier.digitalmx?igsh=M2k4cjhkeDNyZDQ3" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Atelier Digital">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/share/1HRgm8RcM1/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Atelier Digital">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================== -->
+  <!-- LIGHTBOX -->
+  <!-- ===================== -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-lightbox" id="closeLightbox">&times;</span>
+    <img src="" id="lightboxImage" alt="Gallery Zoom" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
